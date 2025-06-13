@@ -1,0 +1,30 @@
+{
+  "database": {
+    "type": "postgresdb",
+    "host": "db",
+    "port": 5432,
+    "user": "n8n_user",
+    "password": "your_password",
+    "database": "n8n"
+  },
+  "editor": {
+    "enabled": true
+  },
+  "security": {
+    "encryptionKey": "your_encryption_key",
+    "sessionSecret": "your_session_secret"
+  },
+  "webhook": {
+    "url": "https://your-domain.com/webhook"
+  },
+  "smtp": {
+    "host": "smtp.your-email-provider.com",
+    "port": 587,
+    "secure": false,
+    "user": "your_email@example.com",
+    "password": "your_email_password"
+  },
+  "credentials": {
+    "apiKey": "your_api_key"
+  }
+}

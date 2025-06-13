@@ -1,0 +1,43 @@
+{
+  "database": {
+    "type": "postgresdb",
+    "host": "postgres",
+    "port": 5432,
+    "database": "n8n",
+    "username": "n8n",
+    "password": "your-postgres-password"
+  },
+  "redis": {
+    "host": "redis",
+    "port": 6379,
+    "password": "your-redis-password"
+  },
+  "endpoints": {
+    "rest": "rest",
+    "webhook": "webhook",
+    "webhookWaiting": "webhook-waiting",
+    "webhookTest": "webhook-test"
+  },
+  "executions": {
+    "pruneData": true,
+    "pruneDataMaxAge": 3360,
+    "pruneDataTimeout": 3600
+  },
+  "nodes": {
+    "exclude": [],
+    "include": []
+  },
+  "security": {
+    "basicAuth": {
+      "active": true,
+      "user": "admin",
+      "password": "your-secure-password"
+    }
+  },
+  "logging": {
+    "level": "info",
+    "outputs": [
+      "console"
+    ]
+  }
+}
